@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    width: 100%;
+    height: 15vh;
+    /* background: transparent; */
+}
+
+.HeaderHold{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+}
+
+header .HeaderHold img{
+    width: 150px;
+    height: 100%;
+}
+
+
+.HeaderButtons button{
+    width: 150px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 5px;
+    color: #fff;
+    background: #000;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+.HeaderButtons button:hover{
+   background-color: #002ead;
+   transition: 0.7s;
+}
+
+.HeaderButtons button:focus{
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 4px #5a01a7;
+}
+
+.HeaderButtons{
+    width: 25%;
+    /* background: red; */
+}
+
+.ButtonHold{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.HeaderNavs nav a{
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.HeaderNavs{
+    width: 40%;
+    /* background-color: green; */
+}
+
+.HeaderNavs nav{
+    width: 100%;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.HeroPage{
+    width: 100%;
+    height: 85vh;
+    /* background: url(./EMAPICTURES/Artboard\ 1.png); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-color: rebeccapurple; */
+}
+
+.HeroPageHold{
+    width: 100%;
+    height: 100%;
+}
+
+.HeroPageText{
+    width: 80%;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-left: 60px;
+}
+
+.HeroPageText .UpperText{
+    width: 100%;
+    /* background-color: yellowgreen; */
+}
+
+.UpperText h1{
+    font-size: 80px;
+    /* padding: 20px;
+    border-bottom: 60px */
+}
+
+
+.HPButton button{
+    width: 179px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 19px;
+    background-color: white;
+    color: #000;
+    font-size: 20px;
+    font-weight: 550;
+    cursor: pointer;
+
+}
+
+.AboutPage{
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+
+}
+
+.AboutPageHold{
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    padding-left: 60px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.LowerText h3{
+    letter-spacing: 5px;
+}
+
+.Speakers{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    padding-left: 60px;
+}
+
+.SpeakersHold{
+    width: 80%;
+    height: 100%;
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+}
+
+.SpeakersUpText h1{
+    color: white;
+    font-size: 50px;
+}
+
+.SpeakersUpText p{
+    color: white;
+    font-size: 20px;
+}
+
+.Img{
+    width: 200px;
+    height: 300px;
+    background-color: black;
+}
+
+.SpeakersImage1{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
