@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
 *{
     padding: 0;
     margin: 0;
@@ -10,13 +23,96 @@
 body{
     width: 100%;
     height: 100%;
+    user-select: none;
 }
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.2s;
+  }
+  .active {
+    color: white;
+  }
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 90px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay {
+      overflow-y: auto;
+    }
+    .overlay a {
+      font-size: 20px;
+    }
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 35px;
+      right: 35px;
+    }
+  }
+  span {
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 15px;
+    display: none;
+    color: white;
+  }
+  @media screen and (max-width: 767px) {
+    span {
+      display: block;
+    }
+  }
+
 
 header{
     width: 100%;
     height: 15vh;
+    z-index: 1;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    background: inherit;
+    position: fixed;
+    justify-content: space-around;
+    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
     /* background: transparent; */
-}
+
 
 .HeaderHold{
     width: 100%;
@@ -24,14 +120,20 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
+    backdrop-filter: blur(10px);
     /* background-color: red; */
 }
 
 header .HeaderHold img{
-    width: 150px;
-    height: 100%;
+    width: 250px;
+    height: 200px;
 }
-
+@media screen and (max-width: 767px) {
+    header .HeaderHold img{
+        margin-left: -20px;
+    }
+}
 
 .HeaderButtons button{
     width: 150px;
@@ -40,7 +142,7 @@ header .HeaderHold img{
     cursor: pointer;
     padding: 5px;
     color: #fff;
-    background: #000;
+    background: transparent;
     border: none;
     outline: none;
     border-radius: 8px;
@@ -70,14 +172,29 @@ header .HeaderHold img{
 
 .HeaderNavs nav a{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.HeaderNavs nav a:hover{
+    border-bottom:2px solid #002ead;
+    transition: 0.7s;
 }
 
 .HeaderNavs{
     width: 40%;
     /* background-color: green; */
 }
-
+@media screen and (max-width: 767px) {
+    .HeaderNavs{
+        display: none;
+    }
+    .HeaderButtons{
+        display: none;
+    }
+}
 .HeaderNavs nav{
     width: 100%;
     /* text-align: center; */
@@ -88,17 +205,20 @@ header .HeaderHold img{
 
 .HeroPage{
     width: 100%;
-    height: 85vh;
+    height: 700px;
     /* background: url(./EMAPICTURES/Artboard\ 1.png); */
+    background-image: url('./EMAPICTURES/IMG_8667.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    color: white;
+    box-shadow: inset 0px 0px 0px transparent, inset 0px -80px 40px #000000;
     /* background-color: rebeccapurple; */
 }
 
 .HeroPageHold{
     width: 100%;
-    height: 100%;
+    height: 50%;
 }
 
 .HeroPageText{
@@ -141,7 +261,6 @@ header .HeaderHold img{
     width: 100%;
     height: 40vh;
     background-color: black;
-
 }
 
 .AboutPageHold{
