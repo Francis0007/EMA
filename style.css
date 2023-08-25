@@ -1,319 +1,362 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin: 0;
+  user-select: none;
+  overflow-x: hidden;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  body {
+    align-items: center;
+  }
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+}
 ::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
-  
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Poppins;
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
-body{
-    width: 100%;
-    height: 100%;
-    user-select: none;
-}
+/* start of Navbar CSS*/
+
 .overlay {
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
-    overflow-y: hidden;
-    transition: 0.5s;
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.2s;
+}
+.active {
+  color: white;
+}
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 50px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
   }
-  
-  .overlay-content {
-    position: relative;
-    top: 15%;
-    width: 100%;
-    text-align: left;
-    margin-top: 30px;
-    margin-left: 30px;
-  }
-  
   .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.2s;
+    font-size: 20px;
   }
-  .active {
-    color: white;
-  }
-  .overlay a:hover,
-  .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
   .overlay .closebtn {
-    position: absolute;
-    top: 90px;
-    right: 45px;
-    font-size: 60px;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
-  
-  @media screen and (max-height: 450px) {
-    .overlay {
-      overflow-y: auto;
-    }
-    .overlay a {
-      font-size: 20px;
-    }
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 35px;
-      right: 35px;
-    }
-  }
+}
+span {
+  font-size: 30px;
+  cursor: pointer;
+  margin-top: 15px;
+  display: none;
+}
+@media screen and (max-width: 767px) {
   span {
-    font-size: 30px;
-    cursor: pointer;
-    margin-top: 15px;
+    display: block;
+  }
+}
+
+.navbar {
+  z-index: 1;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  background: inherit;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  backdrop-filter: blur(10px);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.leftnavbar {
+  color: white;
+  margin-top: -63px;
+}
+@media screen and (max-width: 767px) {
+  .leftnavbar {
+    margin-left: -30px;
+  }
+}
+.centertnavbar {
+  color: white;
+  gap: 10px;
+  margin-top: 30px;
+}
+@media screen and (max-width: 767px) {
+  .centertnavbar,
+  .btnfornavbar1,
+  .btnfornavbar2 {
     display: none;
-    color: white;
   }
-  @media screen and (max-width: 767px) {
-    span {
-      display: block;
-    }
-  }
-
-
-header{
-    width: 100%;
-    height: 15vh;
-    z-index: 1;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-    background: inherit;
-    position: fixed;
-    justify-content: space-around;
-    backdrop-filter: blur(10px);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-    /* background: transparent; */
-
-
-.HeaderHold{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    justify-content: space-around;
-    backdrop-filter: blur(10px);
-    /* background-color: red; */
 }
 
-header .HeaderHold img{
-    width: 250px;
-    height: 200px;
+.centertnavbar a {
+  font-size: 21px;
+  padding: 10px;
+}
+.centertnavbar a:hover {
+ border-bottom: 2px solid #007bff;
+}
+.rightnavbar {
+  color: white;
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+.btnfornavbar1 {
+  color: #f1f1f1;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 14px;
+  padding-right: 14px;
+  text-align: center;
+  height: max-content;
+  border-radius: 5px;
+}
+.btnfornavbar2 {
+  color: #f1f1f1;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  height: max-content;
+  border-radius: 5px;
+}
+.btnfornavbar1:hover {
+  background-color: #ff5722;
+  transition: 0.7s;
+  color: white;
+}
+.btnfornavbar2:hover {
+  background-color:#007bff;
+  transition: 0.7s;
+  color: white;
+}
+/* end of Navbar CSS*/
+
+/* start of section CSS*/
+.section {
+  background-image: url("EMAPICTURES/IMG_8667.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  box-shadow: inset 0px 0px 0px transparent, inset 0px -80px 40px #000000;
+  color: white;
 }
 @media screen and (max-width: 767px) {
-    header .HeaderHold img{
-        margin-left: -20px;
-    }
-}
-
-.HeaderButtons button{
-    width: 150px;
-    font-size: 20px;
-    font-weight: 700;
-    cursor: pointer;
-    padding: 5px;
-    color: #fff;
-    background: transparent;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-}
-
-.HeaderButtons button:hover{
-   background-color: #002ead;
-   transition: 0.7s;
-}
-
-.HeaderButtons button:focus{
-    outline-color: transparent;
-    outline-style: solid;
-    box-shadow: 0 0 0 4px #5a01a7;
-}
-
-.HeaderButtons{
-    width: 25%;
-    /* background: red; */
-}
-
-.ButtonHold{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.HeaderNavs nav a{
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    font-weight: 600;
-    padding: 10px;
-}
-
-.HeaderNavs nav a:hover{
-    border-bottom:2px solid #002ead;
-    transition: 0.7s;
-}
-
-.HeaderNavs{
-    width: 40%;
-    /* background-color: green; */
-}
-@media screen and (max-width: 767px) {
-    .HeaderNavs{
-        display: none;
-    }
-    .HeaderButtons{
-        display: none;
-    }
-}
-.HeaderNavs nav{
-    width: 100%;
-    /* text-align: center; */
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.HeroPage{
-    width: 100%;
+  .section {
     height: 700px;
-    /* background: url(./EMAPICTURES/Artboard\ 1.png); */
-    background-image: url('./EMAPICTURES/IMG_8667.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    box-shadow: inset 0px 0px 0px transparent, inset 0px -80px 40px #000000;
-    /* background-color: rebeccapurple; */
+    background-image: url("EMAPICTURES/herores.jpg");
+  }
 }
-
-.HeroPageHold{
-    width: 100%;
-    height: 50%;
+.section h1 {
+  font-size: 70px;
+  margin-left: 60px;
+  font-weight: 900;
 }
-
-.HeroPageText{
-    width: 80%;
-    height: 100%;
-    /* background-color: yellow; */
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    padding-left: 60px;
+@media screen and (max-width: 767px) {
+  .section h1 {
+    font-size: 55px;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-left: 15px;
+    margin-bottom: 60px;
+  }
 }
-
-.HeroPageText .UpperText{
-    width: 100%;
-    /* background-color: yellowgreen; */
+.section p {
+  font-size: 30px;
+  margin-left: 60px;
+  width: 600px;
+  margin-top: -30px;
 }
-
-.UpperText h1{
-    font-size: 80px;
-    /* padding: 20px;
-    border-bottom: 60px */
-}
-
-
-.HPButton button{
-    width: 179px;
-    height: 50px;
-    outline: none;
-    border: none;
-    border-radius: 19px;
-    background-color: white;
-    color: #000;
+@media screen and (max-width: 767px) {
+  .section p {
     font-size: 20px;
-    font-weight: 550;
-    cursor: pointer;
-
+    width: 350px;
+    margin-left: 15px;
+  }
 }
-
-.AboutPage{
-    width: 100%;
-    height: 40vh;
-    background-color: black;
+.getaticketbtn{
+  background-color: #007bff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  width: max-content;
+  margin-left: 60px;
 }
-
-.AboutPageHold{
-    width: 80%;
-    height: 100%;
-    background-color: white;
-    padding-left: 60px;
-    /* text-align: center; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.getaticketbtn:hover{
+  background-color: transparent;
+  border: 2px solid #007bff;
 }
-
-.LowerText h3{
-    letter-spacing: 5px;
+.section h3{
+  margin-left: 60px;
+  font-size: 20px;
 }
-
-.Speakers{
-    width: 100%;
-    height: 100vh;
-    background-color: red;
-    padding-left: 60px;
-}
-
-.SpeakersHold{
-    width: 80%;
-    height: 100%;
-    background-color: rebeccapurple;
-    display: flex;
-    flex-direction: column;
-}
-
-.SpeakersUpText h1{
-    color: white;
-    font-size: 50px;
-}
-
-.SpeakersUpText p{
-    color: white;
+@media screen and (max-width: 767px) {
+  .section h3{
     font-size: 20px;
+    width: 350px;
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .getaticketbtn{
+    font-size: 20px;
+    width: 250px;
+    margin-left: 15px;
+    margin-top: 40px;
+  }
+}
+/* end of section CSS*/
+
+/* start of section1 CSS*/
+.section1 {
+  background-color: #000000;
+  height:700px;
+  box-shadow: inset 0px 0px 0px none, inset 0px -80px 40px none;
+}
+@media screen and (max-width: 767px) {
+  .section1 {
+    height: 400px;
+  }
+}
+.about {
+  background-color: white;
+  color: black;
+  width: 1100px;
+  height: 120px;
+  left: 0;
+  height: max-content;
+  text-align: left;
 }
 
-.Img{
-    width: 200px;
-    height: 300px;
-    background-color: black;
-}
-
-.SpeakersImage1{
+@media screen and (max-width: 767px) {
+  .about {
     width: 100%;
-    height: 100%;
-    background-color: blue;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    height: 290px;
+  }
 }
+.about h2 {
+  font-size: 17px;
+  margin-left: 40px;
+  width: 1000px;
+}
+@media screen and (max-width: 767px) {
+  .about h2 {
+    width: 90%;
+    font-size: 13px;
+    margin-left: 20px;
+  }
+}
+.section1 h1 {
+  font-size: 60px;
+  margin-left: 40px;
+  margin-top: 100px;
+}
+@media screen and (max-width: 767px) {
+  .section1 h1 {
+    width: 90%;
+    font-size: 30px;
+    margin-top: 60px;
+    margin-left: 10px;
+  }
+}
+.agen {
+  display: inline-block;
+  margin-left: 20px;
+}
+.agendaall {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 20px;
+  height: 190px;
+}
+.agendaall::-webkit-scrollbar {
+  display: none;
+}
+.agendaall a {
+  white-space: normal;
+}
+.agenda {
+  background-color: transparent;
+  padding: 25px;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  width: max-content;
+  box-shadow: 0px 4px 6px #888;
+  text-align: center;
+}
+.agenda:hover {
+  color: gray;
+}
+/* end of section1 CSS*/
+
+/* start of section2 CSS*/
+
+/* end of section2 CSS*/
+
+/* start of section3 CSS*/
+
+/* start of section3 CSS*/
