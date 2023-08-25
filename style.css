@@ -354,8 +354,14 @@ span {
 }
 /* end of section1 CSS*/
 
-/* start of section2 CSS*/
 
+/* start of section2 CSS*/
+.section2{
+  height: 700px;
+  width: 100%;
+  color: white;
+  background-color: black;
+}
 /* end of section2 CSS*/
 
 /* start of section3 CSS*/
