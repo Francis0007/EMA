@@ -6,6 +6,7 @@ body {
   user-select: none;
   overflow-x: hidden;
   width: 100%;
+  background-color: black;
 }
 @media screen and (max-width: 767px) {
   body {
@@ -272,7 +273,7 @@ span {
 /* start of section1 CSS*/
 .section1 {
   background-color: #000000;
-  height:700px;
+  height:820px;
   box-shadow: inset 0px 0px 0px none, inset 0px -80px 40px none;
 }
 @media screen and (max-width: 767px) {
