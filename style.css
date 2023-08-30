@@ -19,6 +19,10 @@ a {
 a:hover {
   color: inherit;
 }
+.topnav::-webkit-scrollbar {
+  width: 10px;
+  display: none;
+}
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -294,7 +298,7 @@ span {
 @media screen and (max-width: 767px) {
   .about {
     width: 100%;
-    height: 290px;
+    height: 130px;
   }
 }
 .about h2 {
@@ -334,6 +338,21 @@ span {
     font-size: 17px;
     margin-left: 10px;
     margin-top: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .agendaall1 a{
+margin-top: 20px;
+  }
+}
+.agendaall1{
+   display: flex;
+   height: 190px;
+}
+@media screen and (max-width: 767px) {
+  .agendaall1{
+    flex-direction: column;
+    height: 450px;
   }
 }
 .agen {
@@ -416,8 +435,8 @@ span {
   }
 }
 .speakimg {
-  width: 280px;
-  height: 300px;
+  width: 260px;
+  height: 280px;
 }
 @media screen and (max-width: 767px) {
   .speakimg {
@@ -428,12 +447,12 @@ span {
 .speakershead {
   display: flex;
   width: 100%;
-  gap: 20px;
+  gap: 40px;
 }
 @media screen and (min-width: 1200px) {
   .speakershead {
     align-items: center;
-    margin-left: 60px;
+    margin-left: 7%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -444,11 +463,15 @@ span {
 }
 .speakershead1 {
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
-.speakers {
-  width: 100px;
-  height: max-content;
+.Speakers{
+  width: 260px;
+}
+@media screen and (max-width: 767px) {
+  .Speakers{
+    width: 170px;
+  }
 }
 /* end of section2 CSS*/
 
@@ -635,5 +658,181 @@ button[type="submit"]:hover {
   .rightfooter h3 {
     margin-left: 20px;
     margin-bottom: -10px;
+  }
+}
+
+
+/*section2*/
+.section22left h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-left: -100px;
+}
+@media screen and (max-width: 767px) {
+  .section22left h2 {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-left: -30px;
+    font-weight: 700;
+    width: 350px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section22left {
+    font-size: 16px;
+  
+  }
+}
+@media screen and (max-width: 767px) {
+  .listoftopnav {
+    height: max-content;
+  }
+}
+.section22 {
+  height: 1670px;
+  background-color: black;
+  color: white;
+  min-width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .section22 {
+    flex-direction: column;
+    height: 900px;
+    align-items: center;
+  }
+}
+.section22left {
+  background-color: transparent;
+  width: 100%;
+  font-size: 40px;
+  margin-left: 120px;
+}
+.boxes {
+  background-color: #dedede;
+  color: black;
+  padding: 10px;
+  height: 284px;
+  width: 287px;
+  margin-left: 49px;
+  margin-top: 20px;
+  border-radius: 0px;
+}
+.boxes h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 20px;
+}
+@media screen and (max-width: 767px) {
+  .boxes h2{
+    margin-top: 70px;
+    margin-left: 10px;
+  }
+}
+.imageonsection22 {
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+  margin-top: 48px;
+  margin-left: 20px;
+}
+.section22right {
+  margin-right: 40px;
+  font-size: 79px;
+}
+.lastonsection22 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 20px;
+}
+@media screen and (max-width: 767px) {
+  .lastonsection22{
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .topnav2list {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .topnav {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .topnav {
+    margin-top: 30px;
+    overflow-x: auto;
+    height: max-content;
+    white-space: nowrap;
+    margin-left: -55px;
+  }
+}
+.topnav a {
+  display: inline-flex;
+  color: black;
+  text-decoration: none;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 0px;
+  white-space: normal;
+}
+@media screen and (max-width: 767px) {
+  .topnav a {
+    height: max-content;
+    margin-left: -20px;
+  }
+}
+.link {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .link {
+    display: none;
+  }
+}
+.sectionleft22 {
+  margin-top: 0px;
+  width: 700px;
+  margin-right: 40px;
+}
+@media screen and (max-width: 767px) {
+  .sectionleft22 h2 {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    margin-top: -50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sectionleft22 {
+    margin-top: 20px;
+    margin-left: -400px;
+    width: 400px;
+    font-size: 15px;
+  }
+}
+.textonsection22 {
+  display: flex;
+  margin-left: 40px;
+}
+@media screen and (max-width: 767px) {
+  .textonsection22 {
+    margin-top: 20px;
+    margin-left: 8%;
   }
 }
