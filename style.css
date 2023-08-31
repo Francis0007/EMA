@@ -376,9 +376,9 @@ margin-top: 20px;
   white-space: normal;
 }
 .agenda {
-  background-color: transparent;
+  background-color: white;
   padding: 25px;
-  color: white;
+  color: black;
   border-radius: 5px;
   font-size: 18px;
   width: max-content;
