@@ -347,13 +347,13 @@ margin-top: 20px;
 }
 .agendaall1{
    display: flex;
-   height: 190px;
+   height: 130px;
    margin-top: -40px;
 }
 @media screen and (max-width: 767px) {
   .agendaall1{
     flex-direction: column;
-    height: 450px;
+    height: 510px;
     margin-top: -5px;
   }
 }
@@ -376,9 +376,9 @@ margin-top: 20px;
   white-space: normal;
 }
 .agenda {
-  background-color: white;
+  background-color: transparent;
   padding: 25px;
-  color: black;
+  color: white;
   border-radius: 5px;
   font-size: 18px;
   width: max-content;
@@ -398,11 +398,23 @@ margin-top: 20px;
   background-color: black;
   margin-top: -100px;
 }
-
+.first{
+  height:300px;
+  width: 100%;
+  color: black;
+  background-color: white;
+  margin-top: -100px;
+  margin-bottom: 31px;
+}
+@media screen and (max-width: 767px) {
+  .first{
+    height: 680px;
+  }
+}
 .section2 h1 {
   font-size: 60px;
   margin-left: 40px;
-  margin-top: 60px;
+  margin-top: 140px;
 }
 @media screen and (max-width: 767px) {
   .section2 h1 {
