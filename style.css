@@ -877,3 +877,34 @@ padding-bottom: 20px;
     margin-left: 8%;
   }
 }
+.section8{
+  background-color: black;
+  height: max-content;
+  color: white;
+}
+.section8 h1{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.section8 p{
+  color: #888;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.donatebtn{
+  background-color: #007bff;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  margin-left: 40px;
+  width: max-content;
+}
+.donatebtn:hover{
+  background-color:#ff5722;
+  transition: 0.7s;
+}
+html{
+  scroll-behavior: smooth;
+}
