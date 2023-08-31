@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 body {
   font-family: "Poppins", sans-serif;
-  color: white;
+  color: black;
   margin: 0;
   user-select: none;
   overflow-x: hidden;
@@ -18,6 +18,10 @@ a {
 }
 a:hover {
   color: inherit;
+}
+.topnav::-webkit-scrollbar {
+  width: 10px;
+  display: none;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -96,6 +100,7 @@ span {
   font-size: 30px;
   cursor: pointer;
   margin-top: 15px;
+  color: white;
   display: none;
 }
 @media screen and (max-width: 767px) {
@@ -146,7 +151,7 @@ span {
   padding: 10px;
 }
 .centertnavbar a:hover {
- border-bottom: 2px solid #007bff;
+  border-bottom: 2px solid #007bff;
 }
 .rightnavbar {
   color: white;
@@ -182,7 +187,7 @@ span {
   color: white;
 }
 .btnfornavbar2:hover {
-  background-color:#007bff;
+  background-color: #007bff;
   transition: 0.7s;
   color: white;
 }
@@ -213,9 +218,10 @@ span {
   .section h1 {
     font-size: 55px;
     font-weight: 600;
-    margin-top: 60px;
+    margin-top: 70px;
     margin-left: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    line-height: 60px;
   }
 }
 .section p {
@@ -231,7 +237,7 @@ span {
     margin-left: 15px;
   }
 }
-.getaticketbtn{
+.getaticketbtn {
   background-color: #007bff;
   padding-left: 20px;
   padding-right: 20px;
@@ -243,23 +249,23 @@ span {
   width: max-content;
   margin-left: 60px;
 }
-.getaticketbtn:hover{
+.getaticketbtn:hover {
   background-color: transparent;
   border: 2px solid #007bff;
 }
-.section h3{
+.section h3 {
   margin-left: 60px;
   font-size: 20px;
 }
 @media screen and (max-width: 767px) {
-  .section h3{
+  .section h3 {
     font-size: 20px;
     width: 350px;
     margin-left: 15px;
   }
 }
 @media screen and (max-width: 767px) {
-  .getaticketbtn{
+  .getaticketbtn {
     font-size: 20px;
     width: 250px;
     margin-left: 15px;
@@ -271,12 +277,12 @@ span {
 /* start of section1 CSS*/
 .section1 {
   background-color: #000000;
-  height:700px;
+  height: 800px;
   box-shadow: inset 0px 0px 0px none, inset 0px -80px 40px none;
 }
 @media screen and (max-width: 767px) {
   .section1 {
-    height: 400px;
+    height: 750px;
   }
 }
 .about {
@@ -292,7 +298,7 @@ span {
 @media screen and (max-width: 767px) {
   .about {
     width: 100%;
-    height: 290px;
+    height: 165px;
   }
 }
 .about h2 {
@@ -311,6 +317,7 @@ span {
   font-size: 60px;
   margin-left: 40px;
   margin-top: 100px;
+  color: white;
 }
 @media screen and (max-width: 767px) {
   .section1 h1 {
@@ -318,6 +325,36 @@ span {
     font-size: 30px;
     margin-top: 60px;
     margin-left: 10px;
+  }
+}
+.section1 p {
+  font-size: 30px;
+  margin-left: 40px;
+  margin-top: -40px;
+}
+@media screen and (max-width: 767px) {
+  .section1 p {
+    width: 90%;
+    font-size: 17px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .agendaall1 a{
+margin-top: 20px;
+  }
+}
+.agendaall1{
+   display: flex;
+   height: 190px;
+   margin-top: -40px;
+}
+@media screen and (max-width: 767px) {
+  .agendaall1{
+    flex-direction: column;
+    height: 450px;
+    margin-top: -5px;
   }
 }
 .agen {
@@ -354,9 +391,477 @@ span {
 /* end of section1 CSS*/
 
 /* start of section2 CSS*/
+.section2 {
+  height: max-content;
+  width: 100%;
+  color: white;
+  background-color: black;
+  margin-top: -100px;
+}
 
+.section2 h1 {
+  font-size: 60px;
+  margin-left: 40px;
+  margin-top: 60px;
+}
+@media screen and (max-width: 767px) {
+  .section2 h1 {
+    width: 90%;
+    font-size: 30px;
+    margin-left: 10px;
+  }
+}
+.section2 p {
+  font-size: 30px;
+  margin-left: 40px;
+  margin-top: -20px;
+}
+@media screen and (max-width: 767px) {
+  .section2 p {
+    width: 90%;
+    font-size: 17px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
+.section2 h2 {
+  font-size: 60px;
+  margin-left: 40px;
+  margin-top: -40px;
+}
+@media screen and (max-width: 767px) {
+  .section2 h2 {
+    width: 90%;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 70px;
+  }
+}
+.speakimg {
+  width: 260px;
+  height: 280px;
+}
+@media screen and (max-width: 767px) {
+  .speakimg {
+    width: 150px;
+    height: 150px;
+  }
+}
+.speakershead {
+  display: flex;
+  width: 100%;
+  gap: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .speakershead {
+    align-items: center;
+    margin-left: 7%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .speakershead {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.speakershead1 {
+  display: flex;
+  gap: 40px;
+}
+.Speakers{
+  width: 260px;
+}
+@media screen and (max-width: 767px) {
+  .Speakers{
+    width: 170px;
+  }
+}
 /* end of section2 CSS*/
 
 /* start of section3 CSS*/
+.section3 {
+  background-color: black;
+  margin-top: -40px;
+  height: max-content;
+  display: flex;
+  width: 100%;
+  color: white;
+}
+@media screen and (max-width: 767px) {
+  .section3 {
+    flex-direction: column;
+  }
+}
+.leftsec3 h1 {
+  font-size: 60px;
+  margin-left: 40px;
+  width: 600px;
+}
+@media screen and (max-width: 767px) {
+  .section3 h1 {
+    width: 100%;
+    font-size: 30px;
+    margin-left: 0px;
+    margin-top: -60px;
+  }
+}
+.rightsec3 p {
+  font-size: 17px;
+  margin-right: 40px;
+}
+@media screen and (max-width: 767px) {
+  .rightsec3 p {
+    width: 90%;
+    font-size: 13px;
+    margin-right: 0px;
+    align-items: center;
+    margin-left: 20px;
+  }
+}
+/* end of section3 CSS*/
 
-/* start of section3 CSS*/
+/* start of section4 CSS*/
+.section4 {
+  height: max-content;
+  background-color: white;
+  color: black;
+  text-align: center;
+  align-items: center;
+}
+.section4 h1 {
+  font-size: 50px;
+  margin-left: 40px;
+}
+@media screen and (max-width: 767px) {
+  .section4 h1 {
+    font-size: 30px;
+    margin-left: 0px;
+  }
+}
+.section4 p {
+  font-size: 30px;
+  margin-left: 40px;
+}
+@media screen and (max-width: 767px) {
+  .section4 p {
+    font-size: 15px;
+    margin-left: 0px;
+  }
+}
+/* end of section4 CSS*/
+
+footer {
+  background-color: white;
+  color: black;
+  justify-content: space-around;
+  display: flex;
+  height: max-content;
+}
+@media screen and (max-width: 767px) {
+  footer {
+    flex-direction: column;
+    height: max-content;
+  }
+}
+.centerfooter {
+  display: inline;
+  line-height: 50px;
+  color: #464545;
+}
+ .leftfooter img{
+  margin-top: 40px;
+}
+@media screen and (max-width: 767px) {
+  .leftfooter {
+    margin-left: 40px;
+
+  }
+}
+@media screen and (max-width: 767px) {
+  .centerfooter {
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+}
+.centerfooter a:hover {
+  color: black;
+  transition: 5s;
+}
+.topform {
+  display: flex;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .topform {
+    flex-direction: column;
+    height: max-content;
+  }
+}
+@media screen and (max-width: 767px) {
+  .downform {
+    flex-direction: column;
+    height: max-content;
+  }
+}
+.downform {
+  display: flex;
+  margin-top: 30px;
+}
+input[type="text"] {
+  border: none;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom: 1px solid black;
+  font-size: 15px;
+  height: 30px;
+}
+@media screen and (max-width: 767px) {
+  input[type="text"] {
+    margin-top: 30px;
+    width: 80%;
+    margin-left: -10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  input[type="email"] {
+    width: 80%;
+    align-items: center;
+    margin-left: -10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  button[type="submit"] {
+    margin-top: 30px;
+    width: 80%;
+    margin-left: -10px;
+    margin-bottom: 40px;
+  }
+}
+input[type="email"] {
+  border: none;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom: 1px solid black;
+  font-size: 15px;
+  height: 30px;
+}
+button[type="submit"] {
+  border-radius: 20px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #007bff;
+  font-size: 17px;
+  color: #f1f1f1;
+  border: none;
+  margin-left: 30px;
+  margin-top: -20px;
+}
+button[type="submit"]:hover {
+  background-color: #ff5722;
+  transition: 0.9s;
+  color: white;
+}
+@media screen and (max-width: 767px) {
+  button[type="submit"]  {
+margin-left: 0px;
+margin-top: 40px;
+padding-top: 20px;
+padding-bottom: 20px;
+  }
+}
+.textfoot{
+  margin-left: 30px;
+}
+@media screen and (max-width: 767px) {
+  .textfoot{
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .rightfooter h3 {
+    margin-left: 20px;
+    margin-bottom: -10px;
+  }
+}
+
+
+/*section2*/
+.section22left h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-left: -100px;
+}
+@media screen and (max-width: 767px) {
+  .section22left h2 {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-weight: 700;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .listoftopnav {
+    height: max-content;
+  }
+}
+.section22 {
+  height: 1670px;
+  background-color: black;
+  color: white;
+  min-width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .section22 {
+    flex-direction: column;
+    height: max-content;
+    align-items: center;
+  }
+}
+.section22left {
+  background-color: transparent;
+  width: 100%;
+  font-size: 40px;
+  margin-left: 120px;
+}
+@media screen and (max-width: 767px) {
+  .section22left {
+    font-size: 16px;
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+.boxes {
+  background-color: #dedede;
+  color: black;
+  padding: 10px;
+  height: 284px;
+  width: 287px;
+  margin-left: 49px;
+  margin-top: 20px;
+  border-radius: 0px;
+}
+.boxes h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 20px;
+}
+@media screen and (max-width: 767px) {
+  .boxes h2{
+    margin-top: 70px;
+    margin-left: 10px;
+  }
+}
+.imageonsection22 {
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+  margin-top: 48px;
+  margin-left: 20px;
+}
+.section22right {
+  margin-right: 40px;
+  font-size: 79px;
+}
+.lastonsection22 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 20px;
+}
+@media screen and (max-width: 767px) {
+  .lastonsection22{
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .topnav2list {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .topnav {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .topnav {
+    margin-top: 30px;
+    overflow-x: auto;
+    height: max-content;
+    white-space: nowrap;
+    width: 100%;
+  }
+}
+.topnav a {
+  display: inline-flex;
+  color: black;
+  text-decoration: none;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 0px;
+  white-space: normal;
+}
+@media screen and (max-width: 767px) {
+  .topnav a {
+    height: max-content;
+    margin-left: -20px;
+  }
+}
+.link {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .link {
+    display: none;
+  }
+}
+.sectionleft22 {
+  margin-top: 0px;
+  width: 700px;
+  margin-right: 40px;
+}
+@media screen and (max-width: 767px) {
+  .sectionleft22 h2 {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    margin-top: -50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sectionleft22 {
+    margin-top: 20px;
+    margin-left: -400px;
+    width: 400px;
+    font-size: 15px;
+  }
+}
+.textonsection22 {
+  display: flex;
+  margin-left: 40px;
+}
+@media screen and (max-width: 767px) {
+  .textonsection22 {
+    margin-top: 20px;
+    margin-left: 8%;
+  }
+}
