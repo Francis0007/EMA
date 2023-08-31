@@ -348,11 +348,13 @@ margin-top: 20px;
 .agendaall1{
    display: flex;
    height: 190px;
+   margin-top: -40px;
 }
 @media screen and (max-width: 767px) {
   .agendaall1{
     flex-direction: column;
     height: 450px;
+    margin-top: -5px;
   }
 }
 .agen {
@@ -400,7 +402,7 @@ margin-top: 20px;
 .section2 h1 {
   font-size: 60px;
   margin-left: 40px;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 @media screen and (max-width: 767px) {
   .section2 h1 {
@@ -432,7 +434,7 @@ margin-top: 20px;
     width: 90%;
     font-size: 30px;
     margin-left: 10px;
-    margin-top: 20px;
+    margin-top: 70px;
   }
 }
 .speakimg {
