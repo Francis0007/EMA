@@ -360,6 +360,7 @@ margin-top: 20px;
 .agen {
   display: inline-block;
   margin-left: 20px;
+  color: black;
 }
 .agendaall {
   display: flex;
