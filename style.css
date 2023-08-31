@@ -400,7 +400,7 @@ margin-top: 20px;
 .section2 h1 {
   font-size: 60px;
   margin-left: 40px;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 @media screen and (max-width: 767px) {
   .section2 h1 {
@@ -677,12 +677,7 @@ button[type="submit"]:hover {
     width: 350px;
   }
 }
-@media screen and (max-width: 767px) {
-  .section22left {
-    font-size: 16px;
-  
-  }
-}
+
 @media screen and (max-width: 767px) {
   .listoftopnav {
     height: max-content;
@@ -708,6 +703,13 @@ button[type="submit"]:hover {
   width: 100%;
   font-size: 40px;
   margin-left: 120px;
+}
+@media screen and (max-width: 767px) {
+  .section22left {
+    font-size: 16px;
+    margin-left: 0px;
+    width: 100%;
+  }
 }
 .boxes {
   background-color: #dedede;
@@ -775,7 +777,7 @@ button[type="submit"]:hover {
     overflow-x: auto;
     height: max-content;
     white-space: nowrap;
-    margin-left: -55px;
+    width: 100%;
   }
 }
 .topnav a {
