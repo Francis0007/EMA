@@ -715,7 +715,7 @@ iframe{
 }
 @media screen and (max-width: 767px) {
   iframe{
-    width: 100%;
+    width: 95%;
     height: 300px;
     align-items: center;
     margin-bottom: 60px;
