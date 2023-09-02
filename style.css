@@ -277,7 +277,7 @@ span {
 /* start of section1 CSS*/
 .section1 {
   background-color: #000000;
-  height: 800px;
+  height: 1200px;
   box-shadow: inset 0px 0px 0px none, inset 0px -80px 40px none;
 }
 @media screen and (max-width: 767px) {
@@ -348,7 +348,7 @@ margin-top: 20px;
 .agendaall1{
    display: flex;
    height: 130px;
-   margin-top: -40px;
+   margin-top: -20px;
 }
 @media screen and (max-width: 767px) {
   .agendaall1{
@@ -385,6 +385,11 @@ margin-top: 20px;
   box-shadow: 0px 4px 6px #888;
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  .agenda{
+    padding: 10px;
+  }
+}
 .agenda:hover {
   color: gray;
 }
@@ -399,16 +404,16 @@ margin-top: 20px;
   margin-top: -100px;
 }
 .first{
-  height:300px;
+  height:250px;
   width: 100%;
   color: black;
   background-color: white;
   margin-top: -100px;
-  margin-bottom: 31px;
+  margin-bottom: 61px;
 }
 @media screen and (max-width: 767px) {
   .first{
-    height: 680px;
+    height: 470px;
   }
 }
 .section2 h1 {
@@ -537,11 +542,10 @@ margin-top: 20px;
   height: max-content;
   background-color: white;
   color: black;
-  text-align: center;
-  align-items: center;
+  text-align: left;
 }
 .section4 h1 {
-  font-size: 50px;
+  font-size: 60px;
   margin-left: 40px;
 }
 @media screen and (max-width: 767px) {
@@ -699,7 +703,11 @@ padding-bottom: 20px;
     margin-bottom: -10px;
   }
 }
-
+.videosection{
+  height: 400px;
+  background-color: black;
+  color: white;
+}
 
 /*section2*/
 .section22left h2 {
@@ -709,7 +717,7 @@ padding-bottom: 20px;
 }
 @media screen and (max-width: 767px) {
   .section22left h2 {
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 30px;
     margin-left: 20px;
     font-weight: 700;
