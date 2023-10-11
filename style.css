@@ -461,7 +461,7 @@ margin-top: 20px;
 @media screen and (max-width: 767px) {
   .speakimg {
     width: 150px;
-    height: 230px;
+    height: 150px;
   }
 }
 .speakershead {
@@ -484,6 +484,11 @@ margin-top: 20px;
 .speakershead1 {
   display: flex;
   gap: 40px;
+}
+@media screen and (max-width: 767px)  {
+  .speakershead1{
+    gap: 0px;
+  }
 }
 .Speakers{
   width: 260px;
